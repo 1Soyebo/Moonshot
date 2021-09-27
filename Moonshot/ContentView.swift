@@ -7,16 +7,16 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     var body: some View {
-        VStack{
-            GeometryReader{
-                geo in
-                Image("example")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: geo.size.width)
+        NavigationView{
+            List(0..<100) { row in
+                NavigationLink(destination: Text("umm \(row)")){
+                    Text("row \(row)")
+                }
             }
+            .navigationTitle("SWe")
         }
     }
 }
