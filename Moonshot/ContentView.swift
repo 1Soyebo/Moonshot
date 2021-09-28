@@ -9,25 +9,11 @@ import SwiftUI
 
 
 struct ContentView: View {
+    let astronauts: [Astronaut] = Bundle.main.decode("astronauts.json")
+    let missions: [Mission] = Bundle.main.decode("missions.json")
+
     var body: some View {
-        Button("Decode JSON") {
-            let input = """
-            {
-                "name": "Taylor Swift",
-                "address": {
-                    "street": "555, Taylor Swift Avenue",
-                    "city": "Nashville"
-                }
-            }
-            """
-
-            let data = Data(input.utf8)
-            let jsonDecoder = JSONDecoder()
-            if let user = try? jsonDecoder.decode(User.self, from: data){
-                print(user.address.street)
-            }
-        }
-
+        Text("\(missions.count)")
     }
 }
 
