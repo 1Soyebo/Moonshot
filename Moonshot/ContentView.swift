@@ -10,14 +10,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView{
-            List(0..<100) { row in
-                NavigationLink(destination: Text("umm \(row)")){
-                    Text("row \(row)")
+        Button("Decode JSON") {
+            let input = """
+            {
+                "name": "Taylor Swift",
+                "address": {
+                    "street": "555, Taylor Swift Avenue",
+                    "city": "Nashville"
                 }
             }
-            .navigationTitle("SWe")
+            """
+
+            let data = Data(input.utf8)
+            let jsonDecoder = JSONDecoder()
+            if let user = try? jsonDecoder.decode(User.self, from: data){
+                print(user.address.street)
+            }
         }
+
     }
 }
 
