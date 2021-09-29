@@ -16,6 +16,7 @@
 		2BD3EF3727030AB10067A83F /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BD3EF3527030AB10067A83F /* astronauts.json */; };
 		2BD3EF3827030AB10067A83F /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BD3EF3627030AB10067A83F /* missions.json */; };
 		2BD3EF3A270378330067A83F /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD3EF39270378330067A83F /* MissionView.swift */; };
+		2BD3EF3C2704B7470067A83F /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD3EF3B2704B7470067A83F /* AstronautView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		2BD3EF3527030AB10067A83F /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
 		2BD3EF3627030AB10067A83F /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		2BD3EF39270378330067A83F /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
+		2BD3EF3B2704B7470067A83F /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				2BD3EF3527030AB10067A83F /* astronauts.json */,
 				2BD3EF3627030AB10067A83F /* missions.json */,
 				2BD3EF39270378330067A83F /* MissionView.swift */,
+				2BD3EF3B2704B7470067A83F /* AstronautView.swift */,
 			);
 			path = Moonshot;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				2BD3EF34270306E00067A83F /* BundleDecodable.swift in Sources */,
 				2BD3EF22270232C90067A83F /* ContentView.swift in Sources */,
 				2BD3EF20270232C90067A83F /* MoonshotApp.swift in Sources */,
+				2BD3EF3C2704B7470067A83F /* AstronautView.swift in Sources */,
 				2BD3EF3A270378330067A83F /* MissionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
