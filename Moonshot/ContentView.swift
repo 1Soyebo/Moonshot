@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var isShowingDate = false
+    @State private var isShowingDate = true
     
     var body: some View {
         NavigationView {
@@ -29,7 +29,7 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitle("Moonshot")
-            .navigationBarItems(trailing: Button("bread"){
+            .navigationBarItems(trailing: Button("Toggle Crew or LaunchDate"){
                 isShowingDate.toggle()
             })
         }
